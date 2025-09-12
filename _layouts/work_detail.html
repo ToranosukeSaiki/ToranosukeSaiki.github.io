@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<article class="post work-detail">
+  <div class="work-thumbnail">
+    <img src="{{ page.thumbnail | relative_url }}" alt="{{ page.title | escape }}">
+  </div>
+
+  <div class="work-header-container">
+    <header class="work-header">
+      <h1 class="work-title">{{ page.title | escape }}</h1>
+      <p class="work-meta">
+        <span class="work-meta-item">
+          <span class="work-meta-label">year:</span> {{ page.year }}
+        </span>
+        <span class="work-meta-item">
+          <span class="work-meta-label">client:</span> {{ page.client }}
+        </span>
+        <span class="work-meta-item">
+          <span class="work-meta-label">category:</span> {{ page.category }}
+        </span>
+      </p>
+    </header>
+  </div>
+
+  <div class="work-content">
+    {{ content }}
+  </div>
+</article>

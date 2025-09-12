@@ -1,0 +1,9 @@
+---
+layout: work_detail
+title: "ぷらちなむnano"
+category: "Instagramフィード広告"
+thumbnail: "/assets/images/thumbs/ad_PN_1.jpg"
+year: 2024
+client: "DREAM合同会社"
+---
+ぷらちなむnanoはペットと共に暮らす方にも安心してご使用いただける消臭スプレーです。

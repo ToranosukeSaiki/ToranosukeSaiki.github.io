@@ -1,0 +1,8 @@
+---
+layout: work_detail
+title: "Amazonサムネイル"
+category: "広告"
+thumbnail: "/assets/images/thumbs/am_PN_1.jpg"
+---
+ここに、作品の詳細な説明文、制作背景、使用ツールなどを記述します。
+写真や動画など、より多くのメディアをここに埋め込むことができます。
