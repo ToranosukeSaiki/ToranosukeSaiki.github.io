@@ -19,19 +19,16 @@
         </label>
 
         <div class="trigger">
-          {%- for path in page_paths -%}
-            {%- assign my_page = site.pages | where: "path", path | first -%}
-            {%- if my_page.title -%}
-              <a class="page-link" href="{{ my_page.url | relative_url }}">
-                {% if my_page.title == "About" %}
-                  <img src="{{ "/assets/images/About.png" | relative_url }}" alt="About" class="nav-logo">
-                {% elsif my_page.title == "Works" %}
-                  <img src="{{ "/assets/images/Works.png" | relative_url }}" alt="Works" class="nav-logo">
-                {% else %}
-                  {{ my_page.title | escape }}
-                {% endif %}
-              </a>
-            {%- endif -%}
+          {%- for item in site.data.navigation -%}
+            <a class="page-link" href="{{ item.url | relative_url }}">
+              {% if item.title == "About" %}
+                <img src="{{ "/assets/images/About.png" | relative_url }}" alt="About" class="nav-logo">
+              {% elsif item.title == "Works" %}
+                <img src="{{ "/assets/images/Works.png" | relative_url }}" alt="Works" class="nav-logo">
+              {% else %}
+                {{ item.title | escape }}
+              {% endif %}
+            </a>
           {%- endfor -%}
         </div>
       </nav>
