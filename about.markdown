@@ -11,11 +11,8 @@ header_title_hidden: true
 自分らしく、好きに生きる。
 </div>
 
-<div class="full-width-image-container">
-  <picture>
-    <source srcset="/assets/images/himy-image-mobile.jpg" media="(max-width: 600px)">
-    <img src="/assets/images/himy-image.jpg" alt="Aboutページコンテンツ画像">
-  </picture>
+<div class="full-width-image-container hide-on-mobile">
+  <img src="/assets/images/himy-image.jpg" alt="Aboutページコンテンツ画像">
   <div class="image-overlay-text">
     <h1>Have It My Way</h1>
     <p>　</p>
@@ -27,9 +24,6 @@ header_title_hidden: true
     <p>　</p>
     <p>そんな生き方を目指して。</p>
     <p>そんな世界を目指して。</p>
-    <p>　</p>
-    <p>Have It Your Way</p>
-    <p>Have It My Way</p>
   </div>
 </div>
 

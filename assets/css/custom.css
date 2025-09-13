@@ -126,7 +126,7 @@ footer.site-footer {
 .about-title {
   font-size: 2.5em; /
   margin-top: 40px; /* 必要に応じて上部の余白を調整 */
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 .post-content .full-width-image-container {
@@ -147,9 +147,9 @@ footer.site-footer {
 
 .image-overlay-text {
   position: absolute; /* 親要素（.full-width-image-container）を基準に絶対配置 */
-  top: 10%;           /* 上から50%の位置 */
-  left: 50%;          /* 左から50%の位置 */
-  color: black;       /* テキストの色を白に（画像の色に応じて調整） */
+  top: 25%;           /* 上から50%の位置 */
+  left: 60%;          /* 左から50%の位置 */
+  color: white;       /* テキストの色を白に（画像の色に応じて調整） */
   text-align: left; /* テキストを中央揃えに */
   font-size: 0.9em;   /* フォントサイズを調整 */
   width: 80%; /* テキストブロックの幅 */
@@ -337,7 +337,7 @@ footer.site-footer {
 @media (max-width: 600px) {
   /* Aboutページのヘッダー画像上部にマージンを追加 */
   .top-image {
-    margin-top: 100px;
+    margin-top: 70px;
   }
 }
 
@@ -345,7 +345,7 @@ footer.site-footer {
   /* Aboutページのタイトル */
   .about-title {
     font-size: 2em; /* フォントサイズを小さく調整 */
-    margin: 20px 0 250px 0;   /* 上下の余白も調整 */
+    margin: 20px 0 270px 0;   /* 上下の余白も調整 */
   }
 }
 
@@ -369,5 +369,12 @@ footer.site-footer {
 
   .image-overlay-text p {
     font-size: 0.8em;
+  }
+}
+
+@media (max-width: 600px) {  
+  /* スマホ画面で非表示にする要素 */
+  .hide-on-mobile {
+    display: none;
   }
 }

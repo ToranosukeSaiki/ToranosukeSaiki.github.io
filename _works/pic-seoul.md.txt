@@ -1,0 +1,10 @@
+---
+layout: work_detail
+title: "2025 SUMMER&FALL SEOUL"
+category: "作品"
+thumbnail: "/assets/images/thumbs/SEOUL.png"
+year: 2025
+client: HIMW
+---
+<h2>TRAVEL in SEOUL</h2>
+<p>2025年9月、ソウルの屋台にて。</p>
