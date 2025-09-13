@@ -4,6 +4,13 @@ title: "ぷらちなむnano"
 category: "Instagramフィード広告"
 thumbnail: "/assets/images/thumbs/ad_PN_1.jpg"
 year: 2024
-client: "DREAM合同会社"
+client: "Face34"
 ---
-ぷらちなむnanoはペットと共に暮らす方にも安心してご使用いただける消臭スプレーです。
+<h2>ぷらちなむnano</h2>
+
+<img src="/assets/images/pn-ref-1.jpg" alt="ぷらちなむnano画像1">
+
+<p>ぷらちなむnanoはペットと共に暮らす方にも安心してご使用いただける消臭スプレーです。プラチナナノ粒子が悪臭の元となる成分を分解し、根本からニオイを取り除きます。</p>
+
+<p>ECモールで販売の改善でお声がけいただき、マーケティング戦略の再設計からAmazonとSNSの運用まで担当しました。
+

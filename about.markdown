@@ -31,7 +31,8 @@ header_title_hidden: true
 </div>
 
 <div class="about-intro">
+  <img src="/assets/images/portrait-tora-square.png">
   <h1>齋木 虎之介</h1>
   <h2> Marketer/Designer</h2>
-  <p>2022年から豪・The University of QueenslandにてMaster of Business (Marketing)。2024年卒業後はフリーランスとして、中小企業様のビジネス課題をマーケティングとデザインからサポート。2025年より、国内大手化粧品会社勤務。</p>
+  <p>2022年から豪・The University of QueenslandにてMaster of Business (Marketing)。2024年卒業後はフリーランスとして、中小企業様のマーケティング戦略からデザインまでサポート。2025年4月より、国内大手化粧品会社勤務。</p>
 </div>
