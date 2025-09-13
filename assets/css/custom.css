@@ -5,10 +5,12 @@
   justify-items: center; /* アイテムを水平方向に中央揃え */
 }
 .works-grid .work-item {
-  display: block;
+  display: flex; /* Flexboxを有効化 */
+  justify-content: center; /* 子要素を水平方向に中央揃え */
+  align-items: center; /* 子要素を垂直方向に中央揃え */
   overflow: hidden;
-  height: 200px; 
-  width: 100%; /* 親要素（グリッドセル）の幅いっぱいに広げる */
+  height: 200px;
+  width: 100%;
 }
 
 /* このルールは .works-grid 内の .work-item の img のみに適用されるべき */
@@ -91,7 +93,7 @@ footer.site-footer {
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   align-items: center;
   /* コンテンツに左右の余白を少し加えることで、画面の端にぴったりつかないようにします */
   padding: 0 40px; 
@@ -376,5 +378,13 @@ footer.site-footer {
   /* スマホ画面で非表示にする要素 */
   .hide-on-mobile {
     display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Worksページのサムネイル画像のスタイルを調整 */
+  .work-thumbnail img {
+    height: auto; /* 高さを自動調整 */
+    width: 100%; /* 幅を親要素に合わせる */
   }
 }
