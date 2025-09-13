@@ -12,7 +12,10 @@ header_title_hidden: true
 </div>
 
 <div class="full-width-image-container">
-  <img src="/assets/images/himy-image.jpg" alt="Aboutページコンテンツ画像">
+  <picture>
+    <source srcset="/assets/images/himy-image-mobile.jpg" media="(max-width: 600px)">
+    <img src="/assets/images/himy-image.jpg" alt="Aboutページコンテンツ画像">
+  </picture>
   <div class="image-overlay-text">
     <h1>Have It My Way</h1>
     <p>　</p>
