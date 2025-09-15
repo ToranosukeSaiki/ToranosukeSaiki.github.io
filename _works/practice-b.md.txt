@@ -1,0 +1,9 @@
+---
+layout: work_detail
+title: "Practice-b"
+category: "Practice"
+thumbnail: "/assets/images/thumbs/practice-1.png"
+year: 2025
+client: HIMW
+---
+<p>Inspired by INSILENCE</p>
