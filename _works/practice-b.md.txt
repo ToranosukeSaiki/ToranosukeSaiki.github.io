@@ -2,7 +2,7 @@
 layout: work_detail
 title: "Practice-b"
 category: "Practice"
-thumbnail: "/assets/images/thumbs/practice-1.png"
+thumbnail: "/assets/images/thumbs/practice-b.png"
 year: 2025
 client: HIMW
 ---

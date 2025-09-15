@@ -1,0 +1,9 @@
+---
+layout: work_detail
+title: "TAMBURINS SUNSHINE"
+category: "Practice"
+thumbnail: "/assets/images/thumbs/tamburins-sunshine.png"
+year: 2025
+client: HIMW
+---
+#勝手に広告

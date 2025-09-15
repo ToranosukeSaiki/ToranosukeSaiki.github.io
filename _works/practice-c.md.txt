@@ -1,0 +1,9 @@
+---
+layout: work_detail
+title: "Practice-c"
+category: "Practice"
+thumbnail: "/assets/images/thumbs/practice-c.png"
+year: 2025
+client: HIMW
+---
+Picture taken in Malaysia by HIMY
