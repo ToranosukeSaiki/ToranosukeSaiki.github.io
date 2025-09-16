@@ -4,4 +4,7 @@ title: "Home"
 permalink: /
 ---
 
-<video src="/assets/videos/HIMW.mp4" autoplay muted playsinline></video>
+<video autoplay muted playsinline>
+  <source src="/assets/videos/HIMW-5v.mp4" media="(max-width: 600px)">
+  <source src="/assets/videos/HIMW.mp4">
+</video>

@@ -467,3 +467,44 @@ footer.site-footer {
     padding: 0 20px;
   }
 }
+
+@media (max-width: 600px) {
+  /* ...既存のレスポンシブスタイル... */
+
+  /* Homeページの動画を画面いっぱいに表示 */
+  .home-page video {
+    width: 100vw;
+    height: auto;
+    object-fit: contain;
+    position: absolute; /* 画面に固定 */
+    top: 0;
+    left: 0;
+    z-index: -1; /* 他のコンテンツの下に配置 */
+  }
+}
+
+@media (max-width: 600px) {
+  /* Homeページのヘッダーを透明に */
+  .home-page .site-header {
+    background-color: transparent; /* 背景色を透明に */
+    box-shadow: none;              /* 影を消去 */
+  }
+}
+
+@media (max-width: 600px) {
+  /* ...既存のレスポンシブスタイル... */
+
+  /* ナビゲーションボックスのスタイル */
+  .site-nav .trigger {
+    background-color: #000; /* 背景色を黒に */
+  }
+
+  /* ナビゲーションリンクのスタイル */
+  .site-nav a {
+    color: #fff; /* リンクのテキスト色を白に */
+    /* ナビゲーションリンク間の余白を調整することもできます */
+    /* padding: 10px; */
+  }
+
+  /* ...その他のレスポンシブスタイル... */
+}
