@@ -492,19 +492,16 @@ footer.site-footer {
 }
 
 @media (max-width: 600px) {
-  /* ...既存のレスポンシブスタイル... */
+  /* ...他のレスポンシブスタイル... */
 
-  /* ナビゲーションボックスのスタイル */
-  .site-nav .trigger {
+  /* ナビゲーションボックスのスタイルをHomeページにのみ適用 */
+  .home-page .site-nav .trigger {
     background-color: #000; /* 背景色を黒に */
+    border: 1px solid #fff; /* 枠線を白に */
   }
 
-  /* ナビゲーションリンクのスタイル */
-  .site-nav a {
+  /* ナビゲーションリンクのテキスト色をHomeページにのみ適用 */
+  .home-page .site-nav a {
     color: #fff; /* リンクのテキスト色を白に */
-    /* ナビゲーションリンク間の余白を調整することもできます */
-    /* padding: 10px; */
   }
-
-  /* ...その他のレスポンシブスタイル... */
 }
