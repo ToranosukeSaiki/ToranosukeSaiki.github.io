@@ -1,5 +1,8 @@
+- title: "Home"
+  url: "/"
+
 - title: "About"
   url: "/about/"
 
 - title: "Works"
-  url: "/"
+  url: "/works/"

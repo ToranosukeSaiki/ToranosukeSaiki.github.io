@@ -1,3 +1,72 @@
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Homeページにのみ適用されるスタイル */
+.home-page .wrapper {
+  max-width: 100%; /* 最大幅を100%に設定 */
+  padding: 0;      /* 左右のパディングを削除 */
+}
+
+/* 動画を画面いっぱいに表示 */
+.home-page video {
+  width: 100vw;      /* ビューポートの幅いっぱいに広げる */
+  height: 100vh;     /* ビューポートの高さいっぱいに広げる */
+  object-fit: cover; /* 縦横比を維持したまま、コンテナを覆うように拡大 */
+  position: absolute; /* 親要素の左上に配置 */
+  top: 0;
+  left: 0;
+  z-index: -1;       /* 他のコンテンツの下に配置 */
+}
+
+/* ヘッダーの高さ分、コンテンツを下にずらす */
+.home-page .header {
+  position: relative;
+  z-index: 100;
+}
+
+.home-page .site-header {
+  background-color: transparent; /* 背景色を透明に */
+}
+
+header.site-header {
+  border-bottom: none; /* ヘッダーの下線を消去 */
+  box-shadow: none;    /* ヘッダーの影を消去 */
+}
+
+/* 念のため、ヘッダーの直後の要素のボーダーも消去します */
+.page-content {
+  border-top: none;
+}
+
+/* Homeページのbodyに設定された余白を削除 */
+body.home-page {
+  padding-top: 0 !important; /* bodyの上部パディングを確実に削除 */
+}
+
+/* 念のため、ヘッダーとメインコンテンツの余白も削除 */
+.home-page .site-header,
+.home-page .page-content {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* Homeページのフッターとコンテンツの間の線を消す */
+.home-page .page-content {
+  margin-bottom: 0 !important; /* コンテンツの下部余白を削除 */
+}
+
+.home-page .site-footer {
+  border-top: none !important; /* フッターの上線を削除 */
+  margin-top: 0 !important;    /* フッター上部の余白を削除 */
+}
+
+body.home-page .site-footer {
+  display: none !important;
+}
+
 .works-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -386,5 +455,15 @@ footer.site-footer {
   .work-thumbnail img {
     height: auto; /* 高さを自動調整 */
     width: 100%; /* 幅を親要素に合わせる */
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    display: flex;
+    /* justify-content: right; は非推奨のため、flex-end に修正します */
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
   }
 }

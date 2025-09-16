@@ -1,13 +1,7 @@
 ---
 layout: default
-title: "Works"
+title: "Home"
+permalink: /
 ---
 
-<div class="works-grid">
-{% assign works = site.works %}
-{% for work in works %}
-  <a href="{{ work.url }}" class="work-item">
-    <img src="{{ work.thumbnail }}" alt="{{ work.title }}">
-  </a>
-{% endfor %}
-</div>
+<video src="/assets/videos/HIMW.mp4" autoplay muted playsinline></video>

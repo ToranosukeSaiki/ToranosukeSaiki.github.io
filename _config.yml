@@ -13,7 +13,7 @@ collections:
 
 header_pages:
   - about.md
-  - index.md
+  - works.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.

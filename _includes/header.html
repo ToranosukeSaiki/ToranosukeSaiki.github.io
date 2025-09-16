@@ -19,17 +19,15 @@
         </label>
 
         <div class="trigger">
-          {%- for item in site.data.navigation -%}
+          {% for item in site.data.navigation %}
             <a class="page-link" href="{{ item.url | relative_url }}">
-              {% if item.title == "About" %}
-                <img src="{{ "/assets/images/About.png" | relative_url }}" alt="About" class="nav-logo">
-              {% elsif item.title == "Works" %}
-                <img src="{{ "/assets/images/Works.png" | relative_url }}" alt="Works" class="nav-logo">
+              {% if page.title == "Home" %}
+                <img src="{{ "/assets/images/" | append: item.title | append: "-white.png" | relative_url }}" alt="{{ item.title }}" class="nav-logo">
               {% else %}
-                {{ item.title | escape }}
+                <img src="{{ "/assets/images/" | append: item.title | append: ".png" | relative_url }}" alt="{{ item.title }}" class="nav-logo">
               {% endif %}
             </a>
-          {%- endfor -%}
+          {% endfor %}
         </div>
       </nav>
     {%- endif -%}
