@@ -10,15 +10,15 @@ video {
   padding: 0;      /* 左右のパディングを削除 */
 }
 
-/* 動画を画面いっぱいに表示 */
+/* Homeページの動画スタイル */
 .home-page video {
-  width: 100vw;      /* ビューポートの幅いっぱいに広げる */
-  height: 100vh;     /* ビューポートの高さいっぱいに広げる */
-  object-fit: cover; /* 縦横比を維持したまま、コンテナを覆うように拡大 */
-  position: absolute; /* 親要素の左上に配置 */
+  width: 100vw;
+  height: auto;
+  object-fit: contain;
+  position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;       /* 他のコンテンツの下に配置 */
+  z-index: -1;
 }
 
 /* ヘッダーの高さ分、コンテンツを下にずらす */
@@ -472,14 +472,9 @@ footer.site-footer {
   /* ...既存のレスポンシブスタイル... */
 
   /* Homeページの動画を画面いっぱいに表示 */
-  .home-page video {
-    width: 100vw;
+    .home-page video {
     height: auto;
     object-fit: contain;
-    position: absolute; /* 画面に固定 */
-    top: 0;
-    left: 0;
-    z-index: -1; /* 他のコンテンツの下に配置 */
   }
 }
 
