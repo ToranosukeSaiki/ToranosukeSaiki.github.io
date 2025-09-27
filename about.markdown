@@ -5,7 +5,7 @@ permalink: /about/
 header_title_hidden: true
 ---
 
-![Aboutページヘッダー画像](/assets/images/HIMY.png){: .top-image}
+![Aboutページヘッダー画像](/assets/images/HIMW.png){: .top-image}
 
 <div class="about-title">
 自分らしく、好きに生きる。

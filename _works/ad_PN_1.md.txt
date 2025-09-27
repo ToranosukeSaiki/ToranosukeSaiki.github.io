@@ -2,7 +2,7 @@
 layout: work_detail
 title: "ぷらちなむnano"
 category: "Instagramフィード広告"
-thumbnail: "/assets/images/thumbs/ad_PN_1.jpg"
+thumbnail: "/assets/images/thumbs/ad_PN_2.png"
 year: 2024
 client: "Face34"
 ---
@@ -14,3 +14,5 @@ client: "Face34"
 
 <p>ECモールで販売の改善でお声がけいただき、マーケティング戦略の再設計からAmazonとSNSの運用まで担当しました。
 
+<img src="/assets/images/ad_PN_1.jpg" alt="ぷらちなむnanoad1">
+<img src="/assets/images/ad_PN_ig.jpg" alt="ぷらちなむnanoig">

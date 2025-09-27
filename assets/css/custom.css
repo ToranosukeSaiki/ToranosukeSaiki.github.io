@@ -1,25 +1,4 @@
-video {
-  width: 100%;
-  height: auto;
-  display: block;
-}
 
-/* Homeページにのみ適用されるスタイル */
-.home-page .wrapper {
-  max-width: 100%; /* 最大幅を100%に設定 */
-  padding: 0;      /* 左右のパディングを削除 */
-}
-
-/* Homeページの動画スタイル */
-.home-page video {
-  width: 100vw;
-  height: auto;
-  object-fit: contain;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
 
 /* ヘッダーの高さ分、コンテンツを下にずらす */
 .home-page .header {
@@ -143,7 +122,7 @@ header.site-header {
 
 /* ロゴ画像のサイズ調整 */
 .site-logo {
-  max-height: 60px; /* 例: ロゴの最大高さを50pxに設定 */
+  max-height: 35px; /* 例: ロゴの最大高さを50pxに設定 */
   width: auto;      /* 幅は高さに合わせて自動調整 */
   vertical-align: middle; /* テキストなどと並んだ場合に垂直方向の中央に揃える */
 }
@@ -178,14 +157,49 @@ footer.site-footer {
 }
 
 .footer-logo {
-  max-height: 30px; /* 例: ロゴの最大高さを30pxに設定 */
+  max-height: 15px; /* 例: ロゴの最大高さを30pxに設定 */
   width: auto;      /* 幅は高さに合わせて自動調整 */
   vertical-align: middle; /* テキストなどと並んだ場合に垂直方向の中央に揃える */
 }
 
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+
+/* Homeページにのみ適用されるスタイル */
+.home-page .wrapper {
+  max-width: 100%; /* 最大幅を100%に設定 */
+  padding: 0;      /* 左右のパディングを削除 */
+}
+
+/* Homeページの動画スタイル */
+.home-page video {
+  width: 100vw;
+  height: auto;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 /* Aboutページの最上部画像に余白を追加 */
 .top-image {
-  padding-top: 60px;
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+
+/* top-imageクラスを持つimg要素（画像自体）の高さと幅を制御 */
+.top-image {
+  height: 180px; /* ★★★ 任意の高さを設定（例: 350px） ★★★ */
+  width: auto;   /* ★★★ 幅をautoに設定することで縦横比を維持 ★★★ */
+  display: block; /* ブロック要素にすることで幅と高さを制御しやすくする */
+  margin: 0 auto; /* 必要に応じて中央揃えに */
 }
 
 /* Aboutページのタイトルのスタイル */
@@ -196,8 +210,8 @@ footer.site-footer {
 /* Aboutページのh1タグのフォントサイズを大きくする */
 .about-title {
   font-size: 2.5em; /
-  margin-top: 40px; /* 必要に応じて上部の余白を調整 */
-  margin-bottom: 80px;
+  margin-top: 100px; /* 必要に応じて上部の余白を調整 */
+  margin-bottom: 200px;
 }
 
 .post-content .full-width-image-container {
