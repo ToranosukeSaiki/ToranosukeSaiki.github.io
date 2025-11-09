@@ -1,0 +1,8 @@
+---
+layout: work_detail
+title: "Practice-i"
+category: "Practice"
+thumbnail: "/assets/images/thumbs/practice-i.png"
+year: 2025
+client: HIMW
+---
