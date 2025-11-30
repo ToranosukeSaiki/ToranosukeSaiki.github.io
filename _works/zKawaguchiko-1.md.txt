@@ -1,0 +1,10 @@
+---
+layout: work_detail
+title: "2025 FALL Lake Kawaguchiko"
+category: "作品"
+thumbnail: "/assets/images/thumbs/Kawaguchiko-1.png"
+year: 2025
+client: HIMW
+---
+<h2>Short Trip with My Colleagues</h2>
+<p>2025年11月、もみじ回廊。</p>
