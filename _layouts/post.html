@@ -27,3 +27,44 @@ layout: default
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
+
+
+
+<style>
+  /* 記事エリア全体のコンテナ設定 */
+  .post {
+    max-width: 720px;       /* 記事の最大幅を制限 */
+    margin: 0 auto;         /* 中央寄せ */
+    padding: 0 20px;        /* スマホ等で両端に少し余白を作る */
+  }
+
+  /* 記事タイトルの微調整（必要であれば） */
+  .post-header {
+    margin-bottom: 2rem;
+    text-align: left;       /* 左揃え（中央揃えにしたい場合は center） */
+  }
+
+  /* 記事本文のフォントサイズと幅の確定 */
+  .post-content {
+    font-size: 1.15rem !important; /* 文字を大きく */
+    line-height: 1.85 !important;  /* 行間を広げて可読性を向上 */
+    color: #333;                   /* 読みやすい濃い灰色 */
+    word-break: break-word;        /* 長い英単語の突き出し防止 */
+  }
+
+  /* 記事内の画像が幅を追い越さないようにする */
+  .post-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 2rem auto;             /* 画像を中央に配置し上下に余白 */
+  }
+
+  /* 記事内の見出し（h2, h3）もバランスを見て調整 */
+  .post-content h2 {
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+  }
+</style>
