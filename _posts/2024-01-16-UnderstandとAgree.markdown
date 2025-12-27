@@ -3,7 +3,7 @@ layout: post
 title:  "UnderstandとAgree"
 date:   2024-01-16 17:59:00 +0900
 categories: jekyll update
-thumbnail: "/assets/images/articles/article-1.png"
+thumbnail: "/assets/images/articles/1.png"
 ---
 「あなたの言っていることはよく分からない！！！」
   

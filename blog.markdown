@@ -18,19 +18,21 @@ permalink: /blog/
     overflow: hidden;
     transition: transform 0.2s;
   }
-  .article-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  }
   .article-link {
     text-decoration: none;
     color: inherit;
+  }
+  .article-link:hover, 
+  .article-link:focus, 
+  .article-link:active {
+    text-decoration: none !important; /* ホバー・選択時も下線を絶対に出さない */
   }
   .thumbnail-wrapper {
     width: 100%;
     aspect-ratio: 16 / 9; /* 横長で統一 */
     overflow: hidden;
     background: #f0f0f0;
+    border-radius: 12px;
   }
   .thumbnail-wrapper img {
     width: 100%;

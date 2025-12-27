@@ -2,6 +2,7 @@
 layout: post
 title: "マネジメントとリーダーシップ"
 date: 2024-01-05
+thumbnail: "/assets/images/articles/2.png"
 ---
 
 「マネジメント」と「リーダーシップ」。  
