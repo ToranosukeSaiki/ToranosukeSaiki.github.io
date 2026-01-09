@@ -507,6 +507,17 @@ video {
 
 /* --- Homeページデザイン：既存パーツ維持版 --- */
 
+/* Homeページのみ、全体の背景色をグレーから白に変更 */
+body.home-page {
+    background-color: #ffffff !important;
+}
+
+/* 念のため、コンテンツを囲む主要なコンテナも白に固定 */
+.home-page .page-content,
+.home-page .himw-content-sections {
+    background-color: #ffffff !important;
+}
+
 /* 1. 既存の消去設定を解除 */
 body.home-page .site-footer {
   display: block !important; /* 消していたフッターを再表示 */
@@ -540,37 +551,78 @@ body.home-page .site-footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 250px;
   padding: 100px 5%;
   background: #fff;
 }
+
+/* グリッドセクションの下部に100pxの余白を追加 */
+.home-page .himw-grid {
+    padding-bottom: 200px !important; /* 既存の100pxに、下げた分の100pxを追加 */
+}
+
 .himw-grid .grid-item {
   display: flex;
   align-items: flex-end;
-  gap: 20px;
+  gap: 80px;
 }
-.himw-grid img { width: 220px; height: auto; }
-.himw-grid h3 { font-size: 28px; margin-bottom: 5px; }
+.himw-grid img { width: auto; height: 500px; }
+.himw-grid h3 { font-size: 35px; margin-bottom: 5px; }
+
+.himw-grid .grid-item .text-box.right {
+    align-self: flex-start; /* 下揃えを解除して上揃えにする */
+    margin-top: 20px;       /* 必要に応じて上からの隙間を微調整 */
+}
+
+.himw-grid .grid-item .text-box {
+    margin-bottom: 20px;
+}
+
+/* 「Works」「Blog」の文字を太く、モダンなフォントに */
+.home-page .himw-grid .text-box h3 {
+    font-family: 'Alfa Slab One', serif;
+    font-weight: 900;           
+    font-size: 3.2rem;            /* 文字サイズを大きく（適宜調整） */
+    letter-spacing: -0.01em;    /* 文字の間隔を少し詰めてモダンな印象に */
+    margin-bottom: 40px;         /* 下の See more との距離 */
+    line-height: 1;
+}
+
+/* タイトルとボタンを縦に並べて中央揃えにする */
+.home-page .himw-grid .text-box {
+    display: flex;
+    flex-direction: column; /* 縦に並べる */
+    align-items: center;    /* 左右中央に揃える */
+    text-align: center;     /* 文字自体も中央揃え */
+}
 
 /* 枠線付き See more ボタン */
-.see-more {
+.see-more, 
+.see-more:visited {
   display: inline-block;
   border: 1px solid #000;
   padding: 3px 12px;
-  font-size: 12px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 900;          
+  font-size: 15px;
   text-decoration: none;
   color: #000;
   text-transform: uppercase;
   font-weight: bold;
 }
 
-/* 画像セクション */
-.himw-section-a img,
-.himw-pre-footer-visual img {
-  width: 100%;
-  height: auto;
-  display: block;
+/* マウスを置いた時（ホバー）の設定：色を反転させるとプロっぽくなります */
+.see-more:hover {
+    background-color: #000;
+    color: #fff !important;
+    text-decoration: none;
 }
+
+/* 左側（Blog）の画像とテキストボックスをまとめて下げる */
+.home-page .himw-grid .grid-item:first-child {
+    transform: translateY(100px); /* 100px下げます。数値はお好みで調整してください */
+}
+
 
 /* 紹介文 */
 .himw-intro {
@@ -578,8 +630,29 @@ body.home-page .site-footer {
   padding: 120px 20px;
   background: #fff;
 }
-.himw-intro h2 { font-size: 1.8rem; margin-bottom: 25px; }
-.himw-intro p { font-size: 1rem; line-height: 2.2; }
+.himw-intro h2 { font-size: 2.8rem; margin-bottom: 25px; }
+.himw-intro p { font-size: 0.85rem; line-height: 2.2; }
+
+/* 自己紹介セクションのタイトル (h2) の調整 */
+.home-page .himw-intro h2 {
+    /* 前回の h3 と同じフォントファミリーを指定してください */
+    font-family: "Arial Black", "Helvetica Neue", sans-serif; /* または "Georgia", serif */
+    font-weight: 100;
+    font-size: 2.5rem;          /* h3（3rem）より少しだけ控えめにするのがバランス良し */
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin-bottom: 30px;        /* 下の文章との距離を確保 */
+    text-align: center;
+    color: #000;
+}
+
+/* スマホでは文字サイズを少し抑える */
+@media (max-width: 600px) {
+    .home-page .himw-intro h2 {
+        font-size: 1.8rem;
+    }
+}
+
 
 /* スマホ対応 */
 @media (max-width: 600px) {
@@ -591,9 +664,10 @@ body.home-page .site-footer {
 /* セクションA & フッター画像 */
 .himw-section-a img,
 .himw-footer-visual img {
-  width: 100%;
+  width: 70%;
   height: auto;
-  display: block;
+  display: block;  /* 画像をブロック要素にする */
+  margin: 0 auto;  /* 上下の余白は0、左右の余白を自動で均等にする＝中央揃え */
 }
 
 .himw-intro {
@@ -613,6 +687,23 @@ body.home-page .site-footer {
     align-items: center;
     text-align: center;
   }
+}
+
+@media (max-width: 600px) {
+  /* Worksセクション（2番目のアイテム）の並び順を反転 */
+  .home-page .himw-grid .grid-item:nth-child(2) {
+    flex-direction: column-reverse !important;
+  }
+}
+
+
+@media (max-width: 600px) {
+    /* 「A」のセクションと、フッター前のビジュアル（SEOUL画像など）を非表示にする */
+    .himw-intro,
+    .himw-footer-visual,
+    .himw-pre-footer-visual {
+        display: none !important;
+    }
 }
 
 /* Homeページのヘッダー微調整 */
@@ -641,4 +732,21 @@ body.home-page .site-footer {
 /* ヘッダーが固定でなくなるため、bodyの余白も不要になります */
 body.home-page {
     padding-top: 0 !important;
+}
+
+/* Homeページのメイン領域下部の余白を完全に消去 */
+.home-page .page-content {
+    padding-bottom: 0 !important;
+}
+
+/* Minimaの標準構造では wrapper にも余白がついているため、これもリセット */
+.home-page .page-content .wrapper {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* フッター上部のマージンや境界線も消して、画像とフッターを連結させる */
+.home-page .site-footer {
+    margin-top: 0 !important;
+    border-top: none !important;
 }

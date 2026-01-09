@@ -1,0 +1,8 @@
+---
+layout: work_detail
+title: "Railway Crossing"
+category: "Picture"
+thumbnail: "/assets/images/thumbs/Perth-3.jpg"
+year: 2025
+client: HIMW
+---

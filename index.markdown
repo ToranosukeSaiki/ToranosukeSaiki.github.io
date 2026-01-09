@@ -35,11 +35,11 @@ permalink: /
 
   <section class="himw-intro">
     <h2>Have It My Way</h2>
-    <p>おはようございます、こんにちは。<br>さいとうすけです。</p>
+    <p>自分勝手なくらいで生きていいんじゃない。<br>自分くらいには正直に。</p>
   </section>
 
   <section class="himw-pre-footer-visual">
-    <img src="/assets/images/thumbs/SEOUL.png" alt="Seoul Night">
+    <img src="/assets/images/thumbs/Perth-3.jpg">
   </section>
 
 </div>

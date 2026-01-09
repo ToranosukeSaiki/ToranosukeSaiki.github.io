@@ -1,0 +1,8 @@
+---
+layout: work_detail
+title: "Pinnacles"
+category: "Picture"
+thumbnail: "/assets/images/thumbs/Perth-2.jpg"
+year: 2025
+client: HIMW
+---
