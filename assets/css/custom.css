@@ -676,33 +676,78 @@ body.home-page .site-footer {
   background: #fff;
 }
 
-/* レスポンシブ対応：スマホでは縦並び */
+/* ============================================================
+   スマホ版（600px以下）の最終レイアウト調整
+   ============================================================ */
 @media (max-width: 600px) {
-  .himw-grid {
-    flex-direction: column;
-    gap: 50px;
-  }
-  .grid-item {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-}
 
-@media (max-width: 600px) {
-  /* Worksセクション（2番目のアイテム）の並び順を反転 */
+  /* 1. 表示セクションの切り替え */
+  .home-page .himw-intro {
+    display: none !important; /* Introセクションを非表示 */
+  }
+
+  .home-page .himw-section-a {
+    display: block !important; /* セクションAを表示 */
+    padding: 60px 0;
+  }
+
+  .home-page .himw-footer-visual,
+  .home-page .himw-pre-footer-visual {
+    display: none !important; /* それ以降は非表示 */
+  }
+
+  /* 2. グリッド全体の並び替え (Worksを上、Blogを下へ) */
+  .home-page .himw-grid {
+    display: flex !important;
+    flex-direction: column-reverse !important; /* HTMLの並びを反転 */
+    gap: 80px !important;
+    padding: 60px 20px !important;
+    align-items: center !important;
+  }
+
+  /* 3. 各アイテム内の並び替え */
+  .home-page .himw-grid .grid-item {
+    display: flex !important;
+    width: 100% !important;
+    align-items: center !important;
+    text-align: center !important;
+    transform: none !important; /* デスクトップ用のズレを解除 */
+  }
+
+  /* 2番目のアイテム (Works: practice-j.png 側) の画像と文字を入れ替え */
   .home-page .himw-grid .grid-item:nth-child(2) {
-    flex-direction: column-reverse !important;
+    flex-direction: column-reverse !important; /* [文字,画像] -> [画像,文字] */
   }
-}
 
+  /* 1番目のアイテム (Blog: practice-b.png 側) */
+  .home-page .himw-grid .grid-item:first-child {
+    flex-direction: column !important; /* [画像,文字] のまま */
+  }
 
-@media (max-width: 600px) {
-    .himw-intro,
-    .himw-footer-visual,
-    .himw-pre-footer-visual {
-        display: none !important;
-    }
+  /* 4. 画像サイズの最適化 */
+  .home-page .himw-grid img {
+    width: 90% !important;
+    height: auto !important;
+    max-height: 400px;
+    object-fit: cover;
+    margin: 0 0 20px 0 !important; /* 画像の下に余白 */
+  }
+
+  /* 5. テキストとボタンの調整 */
+  .home-page .himw-grid .text-box {
+    margin: 0 !important;
+  }
+
+  .home-page .himw-grid .text-box h3 {
+    font-size: 2rem !important;
+    margin-bottom: 20px !important;
+  }
+
+  /* 6. セクションAの画像調整 */
+  .himw-section-a img {
+    width: 85% !important;
+    margin: 0 auto !important;
+  }
 }
 
 /* Homeページのヘッダー微調整 */
