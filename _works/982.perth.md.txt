@@ -2,7 +2,7 @@
 layout: work_detail
 title: "Twilight in Perth"
 category: "Picture"
-thumbnail: "/assets/images/thumbs/Perth-1.jpg"
+thumbnail: "/assets/images/thumbs/Perth-1.JPG"
 year: 2025
 client: HIMW
 ---

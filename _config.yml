@@ -1,3 +1,6 @@
+url: "https://toranosukesaiki.github.io"
+baseurl: ""
+
 # Build settings
 theme: minima
 plugins:
