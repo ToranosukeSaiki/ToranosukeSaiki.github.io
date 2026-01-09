@@ -681,72 +681,79 @@ body.home-page .site-footer {
    ============================================================ */
 @media (max-width: 600px) {
 
-  /* 1. 表示セクションの切り替え */
-  .home-page .himw-intro {
-    display: none !important; /* Introセクションを非表示 */
-  }
-
-  .home-page .himw-section-a {
-    display: block !important; /* セクションAを表示 */
-    padding: 60px 0;
-  }
-
+  /* 1. 非表示セクションの設定 */
+  .home-page .himw-intro,
   .home-page .himw-footer-visual,
   .home-page .himw-pre-footer-visual {
-    display: none !important; /* それ以降は非表示 */
+    display: none !important;
   }
 
-  /* 2. グリッド全体の並び替え (Worksを上、Blogを下へ) */
+  /* 2. セクションA（巨大なA）を表示し、中央揃えを徹底 */
+  .home-page .himw-section-a {
+    display: block !important;
+    padding: 40px 0 !important;
+    text-align: center;
+  }
+  .himw-section-a img {
+    width: 80% !important;
+    margin: 0 auto !important;
+    display: block;
+  }
+
+  /* 3. グリッド全体の並び順序の整理（Worksを上に、Blogを下に） */
   .home-page .himw-grid {
     display: flex !important;
-    flex-direction: column-reverse !important; /* HTMLの並びを反転 */
+    flex-direction: column-reverse !important; /* HTMLの並びを逆転させてWorksを上へ */
     gap: 80px !important;
     padding: 60px 20px !important;
     align-items: center !important;
   }
 
-  /* 3. 各アイテム内の並び替え */
+  /* 4. 各アイテム（Blog/Works）内の共通設定 */
   .home-page .himw-grid .grid-item {
     display: flex !important;
     width: 100% !important;
-    align-items: center !important;
+    align-items: center !important; /* 子要素を垂直軸の中央に */
+    justify-content: center !important; /* 子要素を水平軸の中央に */
     text-align: center !important;
-    transform: none !important; /* デスクトップ用のズレを解除 */
+    transform: none !important; /* デスクトップ版のズレを解除 */
   }
 
-  /* 2番目のアイテム (Works: practice-j.png 側) の画像と文字を入れ替え */
+  /* 5. 【重要】「左寄り」の原因を解除して中央に固定 */
+  .home-page .himw-grid .text-box,
+  .home-page .himw-grid .text-box.right {
+    align-self: center !important; /* デスクトップの flex-start を上書き */
+    margin: 0 !important;         /* デスクトップのマージンをリセット */
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important; /* テキストとボタンを中心に */
+  }
+
+  /* 6. 表示順の指定：J(Works)を上に、画像→文字の順にする */
+  /* Worksセクション (2番目のアイテム) */
   .home-page .himw-grid .grid-item:nth-child(2) {
-    flex-direction: column-reverse !important; /* [文字,画像] -> [画像,文字] */
+    flex-direction: column-reverse !important; /* [文字,画像] を入れ替えて [画像,文字] に */
   }
 
-  /* 1番目のアイテム (Blog: practice-b.png 側) */
+  /* Blogセクション (1番目のアイテム) */
   .home-page .himw-grid .grid-item:first-child {
     flex-direction: column !important; /* [画像,文字] のまま */
   }
 
-  /* 4. 画像サイズの最適化 */
+  /* 7. 画像サイズと余白の最終調整 */
   .home-page .himw-grid img {
     width: 90% !important;
     height: auto !important;
     max-height: 400px;
-    object-fit: cover;
-    margin: 0 0 20px 0 !important; /* 画像の下に余白 */
+    object-fit: contain;
+    margin: 0 0 20px 0 !important; /* 画像の下にテキストとの隙間を作る */
   }
 
-  /* 5. テキストとボタンの調整 */
-  .home-page .himw-grid .text-box {
-    margin: 0 !important;
-  }
-
+  /* 8. 見出しの調整 */
   .home-page .himw-grid .text-box h3 {
-    font-size: 2rem !important;
+    font-size: 2.2rem !important;
     margin-bottom: 20px !important;
-  }
-
-  /* 6. セクションAの画像調整 */
-  .himw-section-a img {
-    width: 85% !important;
-    margin: 0 auto !important;
   }
 }
 
