@@ -698,7 +698,6 @@ body.home-page .site-footer {
 
 
 @media (max-width: 600px) {
-    /* 「A」のセクションと、フッター前のビジュアル（SEOUL画像など）を非表示にする */
     .himw-intro,
     .himw-footer-visual,
     .himw-pre-footer-visual {
